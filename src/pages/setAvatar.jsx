@@ -9,7 +9,7 @@ import { setAvatarRoute } from '../utils/APIRoutes';
 import { Buffer } from 'buffer';
 
 const SetAvatar = () => {
-    const api = process.env.process.env.REACT_APP_MULTI_AVATAR;
+    const api = process.env.REACT_APP_MULTI_AVATAR;
     const navigate = useNavigate();
 
     const [avatars, setAvatars] = useState([]);
@@ -68,9 +68,9 @@ const SetAvatar = () => {
     return (
         <>
             {
-                isLoading ? <Container>
+                isLoading ? ( <Container>
                     <img src={loader} alt="Loading..." className='loader' />
-                </Container> : (
+                </Container> ) : (
                     <Container>
                         <div className="title-container">
                             <h1>
